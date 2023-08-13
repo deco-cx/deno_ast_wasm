@@ -1,0 +1,17 @@
+[package]
+name = "deno_ast_wasm"
+version = "0.0.1"
+authors = ["Divy Srivastava <dj.srivastava23@gmail.com>"]
+edition = "2018"
+publish = false
+
+[lib]
+crate_type = ["cdylib"]
+path = "lib.rs"
+
+[dependencies]
+deno_ast = "0.27.3"
+wasm-bindgen = { version = "=0.2.84", features = ["serde-serialize"] }
+js-sys = "0.3"
+
+

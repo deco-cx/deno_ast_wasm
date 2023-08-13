@@ -1,0 +1,8 @@
+[workspace]
+members = [
+  "deno_ast_wasm/"
+]
+
+[profile.release]
+lto = true
+opt-level = "s"
