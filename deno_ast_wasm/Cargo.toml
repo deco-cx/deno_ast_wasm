@@ -10,8 +10,8 @@ crate_type = ["cdylib"]
 path = "lib.rs"
 
 [dependencies]
-deno_ast = "0.31.6"
-wasm-bindgen = { version = "=0.2.84", features = ["serde-serialize"] }
-js-sys = "0.3"
+deno_ast = "1.0.1"
+wasm-bindgen = { version = "=0.2.90", features = ["serde-serialize"] }
+js-sys = "0.3.67"
 
 

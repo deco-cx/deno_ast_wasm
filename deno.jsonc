@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "build": "deno run -A --unstable https://raw.githubusercontent.com/denoland/wasmbuild/04a278666ec5895ad5a028d4ca3270ba92e7e523/main.ts",
+    "build": "deno run -A --unstable https://raw.githubusercontent.com/denoland/wasmbuild/0.15.5/main.ts",
     // Use a canary / local version of wasmbuild
     "build:local": "deno run -A --unstable ../wasmbuild/main.ts && deno task build:compress",
     "build:compress": "deno run --allow-read --allow-write compress.ts",
