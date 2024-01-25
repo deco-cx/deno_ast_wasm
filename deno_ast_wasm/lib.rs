@@ -20,6 +20,7 @@ pub fn parse_sync(s: &str) -> Result<JsValue, JsValue> {
         capture_tokens: true,
         maybe_syntax: Some(Typescript(TsConfig {
             tsx: true,
+            decorators: true,
             ..Default::default()
         })),
         scope_analysis: false,
