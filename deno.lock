@@ -1,22 +1,117 @@
 {
-  "version": "2",
+  "version": "3",
+  "packages": {
+    "specifiers": {
+      "jsr:@std/archive@^0.218.2": "jsr:@std/archive@0.218.2",
+      "jsr:@std/assert@^0.218.2": "jsr:@std/assert@0.218.2",
+      "jsr:@std/bytes@^0.218.2": "jsr:@std/bytes@0.218.2",
+      "jsr:@std/cli@^0.218.2": "jsr:@std/cli@0.218.2",
+      "jsr:@std/encoding@^0.218.2": "jsr:@std/encoding@0.218.2",
+      "jsr:@std/fmt@^0.218.2": "jsr:@std/fmt@0.218.2",
+      "jsr:@std/fs@^0.218.2": "jsr:@std/fs@0.218.2",
+      "jsr:@std/io@^0.218.2": "jsr:@std/io@0.218.2",
+      "jsr:@std/path@^0.218.2": "jsr:@std/path@0.218.2",
+      "jsr:@std/streams@^0.218.2": "jsr:@std/streams@0.218.2",
+      "npm:@types/node": "npm:@types/node@18.16.19"
+    },
+    "jsr": {
+      "@std/archive@0.218.2": {
+        "integrity": "bcf2a51953ebb14816d66170a50e1ac8805dd7c31e1b822887708211f5398c37",
+        "dependencies": [
+          "jsr:@std/io@^0.218.2"
+        ]
+      },
+      "@std/assert@0.218.2": {
+        "integrity": "7f0a5a1a8cf86607cd6c2c030584096e1ffad27fc9271429a8cb48cfbdee5eaf"
+      },
+      "@std/bytes@0.218.2": {
+        "integrity": "91fe54b232dcca73856b79a817247f4a651dbb60d51baafafb6408c137241670"
+      },
+      "@std/cli@0.218.2": {
+        "integrity": "7877f41b4369f51b2ee06132b678ceee703051671c0fcea9058c1c0242652098",
+        "dependencies": [
+          "jsr:@std/assert@^0.218.2"
+        ]
+      },
+      "@std/encoding@0.218.2": {
+        "integrity": "da55a763c29bf0dbf06fd286430b358266eb99c28789d89fe9a3e28edecb8d8e"
+      },
+      "@std/fmt@0.218.2": {
+        "integrity": "99526449d2505aa758b6cbef81e7dd471d8b28ec0dcb1491d122b284c548788a"
+      },
+      "@std/fs@0.218.2": {
+        "integrity": "dd9431453f7282e8c577cc22c9e6d036055a9a980b5549f887d6012969fabcca",
+        "dependencies": [
+          "jsr:@std/assert@^0.218.2",
+          "jsr:@std/path@^0.218.2"
+        ]
+      },
+      "@std/io@0.218.2": {
+        "integrity": "c64fbfa087b7c9d4d386c5672f291f607d88cb7d44fc299c20c713e345f2785f",
+        "dependencies": [
+          "jsr:@std/assert@^0.218.2",
+          "jsr:@std/bytes@^0.218.2"
+        ]
+      },
+      "@std/path@0.218.2": {
+        "integrity": "b568fd923d9e53ad76d17c513e7310bda8e755a3e825e6289a0ce536404e2662",
+        "dependencies": [
+          "jsr:@std/assert@^0.218.2"
+        ]
+      },
+      "@std/streams@0.218.2": {
+        "integrity": "2af3cab7bb4364575e8616fd36e8df69c5b2ff49b25c5b865c26178e7da2c096",
+        "dependencies": [
+          "jsr:@std/assert@^0.218.2",
+          "jsr:@std/bytes@^0.218.2",
+          "jsr:@std/io@^0.218.2"
+        ]
+      }
+    },
+    "npm": {
+      "@types/node@18.16.19": {
+        "integrity": "sha512-IXl7o+R9iti9eBW4Wg2hx1xQDig183jj7YLn8F7udNceyfkbn1ZxmzZXuak20gR40D7pIkIY1kYGx5VIGbaHKA==",
+        "dependencies": {}
+      }
+    }
+  },
   "remote": {
     "https://deno.land/std@0.187.0/fmt/colors.ts": "d67e3cd9f472535241a8e410d33423980bec45047e343577554d3356e1f0ef4e",
     "https://deno.land/std@0.187.0/testing/_diff.ts": "1a3c044aedf77647d6cac86b798c6417603361b66b54c53331b312caeb447aea",
     "https://deno.land/std@0.187.0/testing/_format.ts": "a69126e8a469009adf4cf2a50af889aca364c349797e63174884a52ff75cf4c7",
     "https://deno.land/std@0.187.0/testing/asserts.ts": "e16d98b4d73ffc4ed498d717307a12500ae4f2cbe668f1a215632d19fcffc22f",
     "https://deno.land/x/lz4@v0.1.2/mod.ts": "4decfc1a3569d03fd1813bd39128b71c8f082850fe98ecfdde20025772916582",
-    "https://deno.land/x/lz4@v0.1.2/wasm.js": "b9c65605327ba273f0c76a6dc596ec534d4cda0f0225d7a94ebc606782319e46"
+    "https://deno.land/x/lz4@v0.1.2/wasm.js": "b9c65605327ba273f0c76a6dc596ec534d4cda0f0225d7a94ebc606782319e46",
+    "https://raw.githubusercontent.com/denoland/wasmbuild/0.17.1/lib/args.ts": "7035c8c488a8133fa8b809e4a39eb5f77bcb52e25accd55e838f2aac3314f8ad",
+    "https://raw.githubusercontent.com/denoland/wasmbuild/0.17.1/lib/bindgen.ts": "539e0a58ac0dbb2025132912b7b32a4bd0e668371a3b25fc3b92b8999fabc4ae",
+    "https://raw.githubusercontent.com/denoland/wasmbuild/0.17.1/lib/commands/build_command.ts": "fff0fb8856c8e11ab4be08540983611fb2dd1406ecf321d95a77a67c39e624ba",
+    "https://raw.githubusercontent.com/denoland/wasmbuild/0.17.1/lib/commands/check_command.ts": "377b57367e205cd82d7b7ab606218744bc6923b3e7cb955d347a096948affb9a",
+    "https://raw.githubusercontent.com/denoland/wasmbuild/0.17.1/lib/commands/new_command.ts": "bbaa05315f29e3c8d7833963fa4b7374b60af70e68a56fb9298cad571dd4f18f",
+    "https://raw.githubusercontent.com/denoland/wasmbuild/0.17.1/lib/helpers.ts": "9bc2c632d320f86553a9a0ecbaccff3240702c082c55e5756177956a2a0164da",
+    "https://raw.githubusercontent.com/denoland/wasmbuild/0.17.1/lib/loader.ts": "e7617d0cfc9277f5fd7b54c20d524487feee27f37157d781c4953bb4dff0f846",
+    "https://raw.githubusercontent.com/denoland/wasmbuild/0.17.1/lib/loader_text.generated.ts": "386dc3c2100a89bf1352ae4daf66a9769e9b5d640c0f1d882bbd51a56d279228",
+    "https://raw.githubusercontent.com/denoland/wasmbuild/0.17.1/lib/manifest.ts": "3ea91885d804b227fe64d19e53f98a8248e7fd011938888a4d0a11e026e7ae79",
+    "https://raw.githubusercontent.com/denoland/wasmbuild/0.17.1/lib/pre_build.ts": "922795fc066c2a631c936a7375888559c7aa28d965ef0fd78aee7fcb164e3ea0",
+    "https://raw.githubusercontent.com/denoland/wasmbuild/0.17.1/lib/utils/sha1.ts": "10cbb8875df57afacff67d6d35925c8cd4c563d49fa3b65e59eba8bb991ad3d1",
+    "https://raw.githubusercontent.com/denoland/wasmbuild/0.17.1/lib/versions.ts": "d788f4e4167aa8aaf2dabd181f7f84d0f18cd9d161fbeea206333b4ef48ed93a",
+    "https://raw.githubusercontent.com/denoland/wasmbuild/0.17.1/lib/wasmbuild.generated.js": "37021ec660e3aea02f44c73c1ea164b840e07bf4c9bf3ee236599e86cc6bee29",
+    "https://raw.githubusercontent.com/denoland/wasmbuild/0.17.1/lib/wasmopt.ts": "5d69eb5fec4d5e4bc28a2953a9228183aca878d4f028fdba0c61ca56690f175a",
+    "https://raw.githubusercontent.com/denoland/wasmbuild/0.17.1/main.ts": "c14696dedc1c0a8ee43dc76171c179642f701c8abce863054002701166b1a2f6"
   },
-  "npm": {
-    "specifiers": {
-      "@types/node": "@types/node@18.16.19"
-    },
-    "packages": {
-      "@types/node@18.16.19": {
-        "integrity": "sha512-IXl7o+R9iti9eBW4Wg2hx1xQDig183jj7YLn8F7udNceyfkbn1ZxmzZXuak20gR40D7pIkIY1kYGx5VIGbaHKA==",
-        "dependencies": {}
-      }
-    }
+  "workspace": {
+    "dependencies": [
+      "jsr:@david/dax@^0.39.2",
+      "jsr:@std/archive@^0.218.2",
+      "jsr:@std/assert@^0.218.2",
+      "jsr:@std/cli@^0.218.2",
+      "jsr:@std/encoding@^0.218.2",
+      "jsr:@std/fmt@^0.218.2",
+      "jsr:@std/fs@^0.218.2",
+      "jsr:@std/io@^0.218.2",
+      "jsr:@std/path@^0.218.2",
+      "jsr:@std/streams@^0.218.2",
+      "npm:code-block-writer@^13.0.1",
+      "npm:ts-morph@^21"
+    ]
   }
 }

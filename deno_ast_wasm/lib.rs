@@ -14,7 +14,7 @@ use wasm_bindgen::prelude::*;
 pub fn parse_sync(s: &str) -> Result<JsValue, JsValue> {
     let text_info = SourceTextInfo::new(s.into());
     let parsed_source = parse_module(ParseParams {
-        specifier: "file:///my_file.ts".to_string(),
+        specifier: url::Url::parse("file:///my_file.ts").expect("Failed to parse URL"),
         media_type: MediaType::TypeScript,
         text_info,
         capture_tokens: true,
