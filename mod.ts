@@ -1,4 +1,4 @@
-import type { Program } from "https://esm.sh/v130/@swc/wasm@1.3.76";
+import type { Program } from "npm:@swc/wasm@1.3.76";
 import { instantiate } from "./lib/deno_ast_wasm.generated.js";
 
 // deno-lint-ignore no-explicit-any
