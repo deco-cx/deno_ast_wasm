@@ -1,5 +1,5 @@
 {
-  "version": "0.5.2",
+  "version": "0.5.4",
   "name": "@deco/deno-ast-wasm",
   "exports": {
     ".": "./mod.ts",
@@ -12,29 +12,6 @@
     "build:compress": "deno run --allow-read --config deno.jsonc --allow-write compress.ts",
     "fmt": "deno fmt --ignore=deno_ast_wasm,lib,target --unstable && cargo fmt",
     "test": "deno test -A --no-check --config deno.jsonc tests/"
-  },
-  "publish": {
-    "include": [
-      "./lib/deno_ast_wasm_bg.wasm",
-      "./lib/deno_ast_wasm.generated.d.ts",
-      "./lib/deno_ast_wasm.generated.js",
-      "./mod.ts",
-      "./wasm.d.ts",
-      "README.md"
-    ],
-    "exclude": [
-      "**/*.bench.ts",
-      "**/*.test.ts",
-      "./scripts/codemod.ts",
-      "./plugins",
-      "live.gen.ts",
-      "MAINTAINERS.txt",
-      "live.ts",
-      "CODE_OF_CONDUCT.md",
-      ".gitattributes",
-      ".github",
-      "assets"
-    ]
   },
   "imports": {
     "@david/dax": "jsr:@david/dax@^0.39.2",
