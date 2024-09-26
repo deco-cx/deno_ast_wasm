@@ -1,5 +1,5 @@
 {
-  "version": "0.5.1",
+  "version": "0.5.2",
   "name": "@deco/deno-ast-wasm",
   "exports": {
     ".": "./mod.ts",
@@ -15,6 +15,7 @@
   },
   "publish": {
     "include": [
+      "./lib/deno_ast_wasm_bg.wasm",
       "./lib/deno_ast_wasm.generated.d.ts",
       "./lib/deno_ast_wasm.generated.js",
       "./mod.ts",
