@@ -1,7 +1,10 @@
 {
   "version": "0.5.1",
   "name": "@deco/deno-ast-wasm",
-  "exports": "./mod.ts",
+  "exports": {
+    ".": "./mod.ts",
+    "./types": "./wasm.d.ts"
+  },
   "tasks": {
     "build": "deno run -A --unstable --config deno.jsonc https://raw.githubusercontent.com/denoland/wasmbuild/0.17.1/main.ts",
     // Use a canary / local version of wasmbuild
@@ -12,6 +15,8 @@
   },
   "publish": {
     "include": [
+      "./lib/deno_ast_wasm.generated.d.ts",
+      "./lib/deno_ast_wasm.generated.js",
       "./mod.ts",
       "./wasm.d.ts",
       "README.md"
