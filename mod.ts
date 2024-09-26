@@ -1,5 +1,5 @@
-import type { Program } from "npm:@swc/wasm@1.3.76";
 import { instantiate } from "./lib/deno_ast_wasm.generated.js";
+import type { Program } from "./wasm.d.ts";
 
 // deno-lint-ignore no-explicit-any
 let parseSyncFunc: Promise<(s: string) => any> | null = null;
