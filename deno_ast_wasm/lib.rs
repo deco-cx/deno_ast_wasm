@@ -2,23 +2,21 @@
 
 use deno_ast::parse_module;
 use deno_ast::swc::parser::Syntax::Typescript;
-use deno_ast::swc::parser::TsConfig;
+use deno_ast::swc::parser::TsSyntax;
 use deno_ast::MediaType;
 use deno_ast::ParseParams;
-use deno_ast::SourceTextInfo;
 use js_sys::Array;
 use js_sys::Object;
 use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen(js_name = "parseSync")]
 pub fn parse_sync(s: &str) -> Result<JsValue, JsValue> {
-    let text_info = SourceTextInfo::new(s.into());
     let parsed_source = parse_module(ParseParams {
         specifier: url::Url::parse("file:///my_file.ts").expect("Failed to parse URL"),
         media_type: MediaType::TypeScript,
-        text_info,
+        text: s.into(),
         capture_tokens: true,
-        maybe_syntax: Some(Typescript(TsConfig {
+        maybe_syntax: Some(Typescript(TsSyntax {
             tsx: true,
             decorators: true,
             ..Default::default()

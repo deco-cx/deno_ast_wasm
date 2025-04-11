@@ -1,5 +1,5 @@
 {
-  "version": "0.5.4",
+  "version": "0.5.5",
   "name": "@deco/deno-ast-wasm",
   "exports": {
     ".": "./mod.ts",
